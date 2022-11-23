@@ -1,11 +1,12 @@
 import { useAccount } from 'wagmi'
 
 export default function User() {
+  //Getting account details
   const { isConnected, address } = useAccount()
 
   return (
-    <>
-       Status : {isConnected ? <>User is connected {address}</> : <>User is not connected</>} 
-    </>
+    <div>
+        {isConnected ? <>Address : {address}</> : <>User is not connected</>} 
+    </div>
   )
 }

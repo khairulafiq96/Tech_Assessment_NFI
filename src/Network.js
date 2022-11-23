@@ -1,10 +1,11 @@
 import { useNetwork } from 'wagmi'
 
 export default function Network(){
-    const { chain, chains } = useNetwork()
+    //Getting Network Details
+    const { chain } = useNetwork()
     return (
-        <>
-        {chain && <div>Connected to {chain.name}</div>}
-        </>
+        <div>
+            {chain && <div>Network : {chain.name}</div>}
+        </div>
     )
 }
