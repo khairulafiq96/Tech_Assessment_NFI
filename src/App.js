@@ -28,7 +28,7 @@ const ethereumClient = new EthereumClient(wagmiClient, chains);
 
 export default function App(){
   return (
-    <>
+    <div className="">
     <Web3Modal
         projectId="c2b975a1e9bc302f69b3adf13a2c3f4b"
         theme="dark"
@@ -39,6 +39,6 @@ export default function App(){
     <User></User>
     <Network></Network>
     
-    </>
+    </div>
   )
 };
